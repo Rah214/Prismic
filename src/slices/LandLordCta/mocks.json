@@ -1,0 +1,39 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"text": {
+				"__TYPE__": "FieldContent",
+				"value": "while",
+				"type": "Text"
+			},
+			"heading": {
+				"__TYPE__": "FieldContent",
+				"value": "collect",
+				"type": "Text"
+			},
+			"paragraph": {
+				"__TYPE__": "FieldContent",
+				"value": "himself",
+				"type": "Text"
+			},
+			"placeholder": {
+				"__TYPE__": "FieldContent",
+				"value": "room",
+				"type": "Text"
+			},
+			"btnlabel": {
+				"__TYPE__": "FieldContent",
+				"value": "strong",
+				"type": "Text"
+			},
+			"smalltext": {
+				"__TYPE__": "FieldContent",
+				"value": "felt",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

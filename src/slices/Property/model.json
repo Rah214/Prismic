@@ -1,0 +1,117 @@
+{
+  "id": "property",
+  "type": "SharedSlice",
+  "name": "Property",
+  "description": "Property",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "propertyheading": {
+          "type": "Text",
+          "config": {
+            "label": "PropertyHeading",
+            "placeholder": ""
+          }
+        },
+        "propertytext": {
+          "type": "Text",
+          "config": {
+            "label": "PropertyText",
+            "placeholder": ""
+          }
+        },
+        "cards": {
+          "type": "Group",
+          "config": {
+            "label": "Cards",
+            "repeat": true,
+            "fields": {
+              "cardimage": {
+                "type": "Image",
+                "config": {
+                  "label": "CardImage",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "cardprize": {
+                "type": "Text",
+                "config": {
+                  "label": "CardPrize",
+                  "placeholder": ""
+                }
+              },
+              "cardmonth": {
+                "type": "Text",
+                "config": {
+                  "label": "CardMonth",
+                  "placeholder": ""
+                }
+              },
+              "cardheading": {
+                "type": "Text",
+                "config": {
+                  "label": "CardHeading",
+                  "placeholder": ""
+                }
+              },
+              "cardpara": {
+                "type": "Text",
+                "config": {
+                  "label": "CardPara",
+                  "placeholder": ""
+                }
+              },
+              "cardheartimg": {
+                "type": "Image",
+                "config": {
+                  "label": "CardHeartImg",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              }
+            }
+          }
+        },
+        "cardsvgtext": {
+          "type": "Group",
+          "config": {
+            "label": "CardSvgText",
+            "repeat": true,
+            "fields": {
+              "cardsmallimage": {
+                "type": "Image",
+                "config": {
+                  "label": "CardSmallImage",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "cardsmalltext": {
+                "type": "Text",
+                "config": {
+                  "label": "CardSmallText",
+                  "placeholder": ""
+                }
+              },
+              "cardsmalltext2": {
+                "type": "Text",
+                "config": {
+                  "label": "CardSmallText2",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

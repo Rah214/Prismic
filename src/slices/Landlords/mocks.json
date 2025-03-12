@@ -1,0 +1,107 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"landlordimage": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
+					"width": 4000,
+					"height": 4000
+				},
+				"url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
+				"width": 4000,
+				"height": 4000,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"alt": "ill",
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"landlordheading": {
+				"__TYPE__": "FieldContent",
+				"value": "jack",
+				"type": "Text"
+			},
+			"landlordpara": {
+				"__TYPE__": "FieldContent",
+				"value": "dropped",
+				"type": "Text"
+			},
+			"smallimage": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72",
+					"width": 4010,
+					"height": 4010
+				},
+				"url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72",
+				"width": 4010,
+				"height": 4010,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"alt": "meant",
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"togglebutton": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"label",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "universe",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			},
+			"btnheading": {
+				"__TYPE__": "FieldContent",
+				"value": "vowel",
+				"type": "Text"
+			},
+			"btnpara": {
+				"__TYPE__": "FieldContent",
+				"value": "distant",
+				"type": "Text"
+			},
+			"btnlabel": {
+				"__TYPE__": "FieldContent",
+				"value": "dear",
+				"type": "Text"
+			},
+			"btnlink": {
+				"__TYPE__": "LinkContent",
+				"key": "22bedd67-ee83-49be-9c19-8376989f9668",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://twitter.com",
+					"text": "noise"
+				}
+			}
+		},
+		"items": []
+	}
+]

@@ -1,0 +1,97 @@
+{
+  "format": "custom",
+  "id": "footer",
+  "label": "Footer",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "footerlogo": {
+        "type": "Image",
+        "config": {
+          "label": "FooterLogo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "footertitle": {
+        "type": "Group",
+        "config": {
+          "label": "FooterTitle",
+          "repeat": true,
+          "fields": {
+            "footertitles": {
+              "type": "Text",
+              "config": {
+                "label": "FooterTitles",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "footerlinks": {
+        "type": "Group",
+        "config": {
+          "label": "FooterLinks",
+          "repeat": true,
+          "fields": {
+            "footerlabel": {
+              "type": "Text",
+              "config": {
+                "label": "FooterLabel",
+                "placeholder": ""
+              }
+            },
+            "footerlink": {
+              "type": "Link",
+              "config": {
+                "label": "FooterLink",
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
+              }
+            }
+          }
+        }
+      },
+      "copyright": {
+        "type": "Text",
+        "config": {
+          "label": "CopyRight",
+          "placeholder": ""
+        }
+      },
+      "footericons": {
+        "type": "Group",
+        "config": {
+          "label": "FooterIcons",
+          "repeat": true,
+          "fields": {
+            "icons": {
+              "type": "Select",
+              "config": {
+                "label": "Icons",
+                "placeholder": "",
+                "options": ["FaceBook", "Linkedin", "Twitter", "Instagram"]
+              }
+            },
+            "iconslink": {
+              "type": "Link",
+              "config": {
+                "label": "IconsLink",
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

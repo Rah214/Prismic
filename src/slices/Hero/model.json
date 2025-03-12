@@ -1,0 +1,127 @@
+{
+  "id": "hero",
+  "type": "SharedSlice",
+  "name": "Hero",
+  "description": "Hero",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "Text",
+          "config": {
+            "label": "Heading",
+            "placeholder": ""
+          }
+        },
+        "description": {
+          "type": "Text",
+          "config": {
+            "label": "Description",
+            "placeholder": ""
+          }
+        },
+        "banner_Image": {
+          "type": "Image",
+          "config": {
+            "label": "BannerImage",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "card": {
+          "type": "Group",
+          "config": {
+            "label": "Card",
+            "repeat": true,
+            "fields": {
+              "card_Image": {
+                "type": "Image",
+                "config": {
+                  "label": "CardImage",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "card_Prize": {
+                "type": "Text",
+                "config": {
+                  "label": "CardPrize",
+                  "placeholder": ""
+                }
+              },
+              "cardtext": {
+                "type": "Text",
+                "config": {
+                  "label": "CardText",
+                  "placeholder": ""
+                }
+              },
+              "cardpara": {
+                "type": "Text",
+                "config": {
+                  "label": "CardPara",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        },
+        "cardsvg": {
+          "type": "Group",
+          "config": {
+            "label": "CardSvg",
+            "repeat": true,
+            "fields": {
+              "cardsvgimage": {
+                "type": "Image",
+                "config": {
+                  "label": "CardSvgImage",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "cardsvgtext": {
+                "type": "Text",
+                "config": {
+                  "label": "CardSvgText",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        },
+        "smallcardsvg": {
+          "type": "Group",
+          "config": {
+            "label": "SmallCardSvg",
+            "repeat": true,
+            "fields": {
+              "smallcardsvgimage": {
+                "type": "Image",
+                "config": {
+                  "label": "SmallCardSvgImage",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "smallcardsvgtext": {
+                "type": "Text",
+                "config": {
+                  "label": "SmallCardSvgText",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

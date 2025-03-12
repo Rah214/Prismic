@@ -1,0 +1,97 @@
+{
+  "id": "landlords",
+  "type": "SharedSlice",
+  "name": "Landlords",
+  "description": "Landlords",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "landlordimage": {
+          "type": "Image",
+          "config": {
+            "label": "LandlordImage",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "landlordheading": {
+          "type": "Text",
+          "config": {
+            "label": "LandlordHeading",
+            "placeholder": ""
+          }
+        },
+        "landlordpara": {
+          "type": "Text",
+          "config": {
+            "label": "LandlordPara",
+            "placeholder": ""
+          }
+        },
+        "smallimage": {
+          "type": "Image",
+          "config": {
+            "label": "SmallImage",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "togglebutton": {
+          "type": "Group",
+          "config": {
+            "label": "ToggleButton",
+            "repeat": true,
+            "fields": {
+              "label": {
+                "type": "Text",
+                "config": {
+                  "label": "Label",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        },
+        "btnheading": {
+          "type": "Text",
+          "config": {
+            "label": "BtnHeading",
+            "placeholder": ""
+          }
+        },
+        "btnpara": {
+          "type": "Text",
+          "config": {
+            "label": "BtnPara",
+            "placeholder": ""
+          }
+        },
+        "btnlabel": {
+          "type": "Text",
+          "config": {
+            "label": "Btnlabel",
+            "placeholder": ""
+          }
+        },
+        "btnlink": {
+          "type": "Link",
+          "config": {
+            "label": "BtnLink",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

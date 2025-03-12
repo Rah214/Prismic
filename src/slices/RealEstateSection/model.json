@@ -1,0 +1,72 @@
+{
+  "id": "real_estate_section",
+  "type": "SharedSlice",
+  "name": "RealEstateSection",
+  "description": "RealEstateSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "realheading": {
+          "type": "Text",
+          "config": {
+            "label": "RealHeading",
+            "placeholder": ""
+          }
+        },
+        "realpara": {
+          "type": "Text",
+          "config": {
+            "label": "RealPara",
+            "placeholder": ""
+          }
+        },
+        "realimage": {
+          "type": "Image",
+          "config": {
+            "label": "RealImage",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "realproperties": {
+          "type": "Group",
+          "config": {
+            "label": "RealProperties",
+            "repeat": true,
+            "fields": {
+              "realprop": {
+                "type": "Image",
+                "config": {
+                  "label": "RealPropertiesImage",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "realpropertiesheading": {
+                "type": "Text",
+                "config": {
+                  "label": "RealPropertiesHeading",
+                  "placeholder": ""
+                }
+              },
+              "realpropertiestext": {
+                "type": "Text",
+                "config": {
+                  "label": "RealPropertiesText",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

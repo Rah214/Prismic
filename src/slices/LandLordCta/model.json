@@ -1,0 +1,61 @@
+{
+  "id": "land_lord_cta",
+  "type": "SharedSlice",
+  "name": "LandLordCta",
+  "description": "LandLordCta",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "text": {
+          "type": "Text",
+          "config": {
+            "label": "Text",
+            "placeholder": ""
+          }
+        },
+        "heading": {
+          "type": "Text",
+          "config": {
+            "label": "Heading",
+            "placeholder": ""
+          }
+        },
+        "paragraph": {
+          "type": "Text",
+          "config": {
+            "label": "Paragraph",
+            "placeholder": ""
+          }
+        },
+        "placeholder": {
+          "type": "Text",
+          "config": {
+            "label": "Placeholder",
+            "placeholder": ""
+          }
+        },
+        "btnlabel": {
+          "type": "Text",
+          "config": {
+            "label": "Btnlabel",
+            "placeholder": ""
+          }
+        },
+        "smalltext": {
+          "type": "Text",
+          "config": {
+            "label": "SmallText",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
