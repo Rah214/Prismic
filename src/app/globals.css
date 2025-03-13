@@ -71,18 +71,10 @@
 }
 
 .button2{
-  @apply bg-[#7065F0] font-bold leading-[24px] w-full max-w-md sm:hidden block rounded-[8px] text-white py-[12px] px-[40px] hover:bg-purple-600
+  @apply bg-[#7065F0] mt-3 font-bold leading-[24px] w-full max-w-md sm:hidden block rounded-[8px] text-white py-[12px] px-[40px] hover:bg-purple-600
 }
 
 .bottomText{
   @apply mt-4 text-[#D3D5DA] leading-[19.6px] text-[14px]
 }
-
-
-
-
-
-
-
-
 

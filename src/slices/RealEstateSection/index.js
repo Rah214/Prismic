@@ -1,5 +1,5 @@
 import { PrismicNextImage } from "@prismicio/next";
-import { Image } from "lucide-react";
+// import { Image } from "lucide-react";
 
 /**
  * @typedef {import("@prismicio/client").Content.RealEstateSectionSlice} RealEstateSectionSlice
@@ -8,7 +8,7 @@ import { Image } from "lucide-react";
  */
 const RealEstateSection = ({ slice }) => {
   const { primary } = slice;
-  console.log(primary);
+  // console.log(primary);
 
   return (
     <section className="p-6 md:p-[30px] rounded-lg font-sans">
@@ -50,3 +50,4 @@ const RealEstateSection = ({ slice }) => {
 };
 
 export default RealEstateSection;
+

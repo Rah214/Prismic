@@ -16,7 +16,7 @@ const Hero = ({ slice }) => {
   const { primary } = slice;
   // const {data} =slice?.primary?.card?.
 
-  console.log('sdf', slice?.primary?.card)
+  // console.log('sdf', slice?.primary?.card)
 
   const arr = ['a', {
     a: 1,

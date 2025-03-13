@@ -44,7 +44,7 @@ const Header = ({ header }) => {
         {/* Buttons */}
         <div className="hidden md:flex items-center lg:gap-4 gap-2">
           {data.authbuttons.map(({ link, label }, index) => (
-            <Link key={index} href={link}>
+            <PrismicNextLink key={index} field={link}>
               <button
                 className={`lg:px-6 lg:py-3 px-4 py-2 lg:text-[16px] text-[14px] lg:leading-6 leading-3 font-bold rounded-lg ${
                   index === 0
@@ -54,7 +54,7 @@ const Header = ({ header }) => {
               >
                 {label}
               </button>
-            </Link>
+            </PrismicNextLink>
           ))}
         </div>
 
@@ -74,18 +74,18 @@ const Header = ({ header }) => {
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="md:hidden flex flex-col items-start mt-4 gap-4 bg-[#F7F7FD] w-screen h-screen p-4"
           >
-            {data.navigation?.map(({ link, label }, index) => (
-              <Link
+            {data.navigation?.map(({ link, label }, index) =>  (
+              <PrismicNextLink
                 key={index}
-                href={link}
+                field={link}
                 onClick={() => setMenuOpen(false)}
                 className="flex items-center gap-2 hover:text-[#7065F0] pl-[10px] transition-colors duration-200"
               >
                 {label}
-              </Link>
+              </PrismicNextLink>
             ))}
             {data.authbuttons.map(({ link, label }, index) => (
-              <Link key={index} href={link} onClick={() => setMenuOpen(false)}>
+              <PrismicNextLink key={index} field={link} onClick={() => setMenuOpen(false)}>
                 <button
                   className={`px-6 py-3 flex items-start justify-start leading-6 font-bold rounded-lg w-full ${
                     index === 0 
@@ -95,7 +95,7 @@ const Header = ({ header }) => {
                 >
                   {label}
                 </button>
-              </Link>
+              </PrismicNextLink>
             ))}
           </motion.div>
           
@@ -106,3 +106,4 @@ const Header = ({ header }) => {
 };
 
 export default Header;
+

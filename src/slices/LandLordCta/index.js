@@ -5,7 +5,7 @@
  */
 const LandLordCta = ({ slice }) => {
   const { primary } = slice;
-  console.log(primary);
+  // console.log(primary);
 
   return (
     <div className="bg-[#100A55] text-white gap-[8px] md:py-16 py-[48px] px-6 text-center flex flex-col items-center">

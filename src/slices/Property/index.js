@@ -8,7 +8,7 @@ import "swiper/css/free-mode";
 
 const Property = ({ slice }) => {
   const { primary } = slice;
-  console.log("primary", primary);
+  // console.log("primary", primary);
   return (
     <div className="w-full bg-gradient-to-b from-white to-[#F0EFFB]">
       <section className="max-w-[1440px] xl:px-[160px] md:py-[80px] py-[40px] px-[24px] font-sans m-auto">
@@ -54,7 +54,7 @@ const Property = ({ slice }) => {
 };
 
 const PropertyCard = ({ item, primary }) => {
-  // console.log(item)
+  console.log('item', item)
   return (
     <div className="w-full bg-white rounded-2xl overflow-hidden hover:scale-105 hover:shadow-2xl transition-transform duration-300">
       <Link href={item?.cardlink || "/"}>

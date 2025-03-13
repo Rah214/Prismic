@@ -15,7 +15,7 @@ import { FreeMode, Navigation } from "swiper/modules";
  */
 const Testimonials = ({ slice }) => {
   const { primary } = slice;
-  console.log(primary);
+  // console.log(primary);
   return (
     <section
       className="w-full md:pt-[64px] pt-[32px] md:pb-[100px] pb-[50px] font-sans px-[24px]"
