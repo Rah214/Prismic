@@ -22,7 +22,14 @@ const routes = [
   	type: "home",
   	path: "/",
   },
-  
+  {
+  	type: "blog_test",
+  	path: "/blog/:uid",
+  },
+  {
+    type: "page",
+    path: "/:uid",
+  }
 ];
 
 /**

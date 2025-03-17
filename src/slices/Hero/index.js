@@ -18,11 +18,7 @@ const Hero = ({ slice }) => {
 
   // console.log('sdf', slice?.primary?.card)
 
-  const arr = ['a', {
-    a: 1,
-    b: 2
-  }, 4, 456, 6, 6]
-  arr[1]?.b
+  
   return (
     <div className="bg-[#F7F7FD] py-[72px] relative">
       {/* Background image for the right half */}

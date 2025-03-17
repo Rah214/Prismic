@@ -22,6 +22,12 @@ export default function SearchBar() {
               <option>Barcelona, Spain</option>
               <option>Madrid, Spain</option>
               <option>Valencia, Spain</option>
+              <option>Malaga, Spain</option>
+              <option>Seville, Spain</option>
+              <option>Bilbao, Spain</option>
+              <option>Zaragoza, Spain</option>
+              <option>Málaga, Spain</option>
+              <option>Murcia, Spain</option>
             </select>
           </div>
 

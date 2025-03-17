@@ -18,7 +18,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  console.log(children)
+  // console.log(children)
   return (
     <html lang="en">
       <body

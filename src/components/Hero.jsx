@@ -62,6 +62,7 @@ const Hero = () => {
                 height={200}
                 alt="Property"
                 className="w-full rounded-t-2xl"
+                
               ></Image>
               <div className="pl-[22px] pr-[24px] py-[24px] flex flex-col gap-[4px] max-w-[324px]">
                 <h2 className="text-[24px] font-extrabold text-[#7065F0]">
@@ -190,5 +191,3 @@ const Hero = () => {
     </div>
   );
 };
-
-export default Hero;

@@ -6,7 +6,7 @@
  * @type {import("react").FC<LandlordsProps>}
 */
 import { useState } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import { PrismicNextImage } from "@prismicio/next";
 
 const Landlords = ({ slice }) => {
