@@ -1,7 +1,7 @@
 {
   "format": "page",
   "id": "blog_test",
-  "label": "blog_test",
+  "label": "blogs",
   "repeatable": true,
   "status": true,
   "json": {
@@ -10,6 +10,28 @@
         "type": "UID",
         "config": {
           "label": "UID"
+        }
+      },
+      "blogimage": {
+        "type": "Image",
+        "config": {
+          "label": "BlogImage",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "blogheading": {
+        "type": "Text",
+        "config": {
+          "label": "BlogHeading",
+          "placeholder": ""
+        }
+      },
+      "blogparagraph": {
+        "type": "Text",
+        "config": {
+          "label": "BlogParagraph",
+          "placeholder": ""
         }
       },
       "slices": {

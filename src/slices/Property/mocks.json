@@ -102,6 +102,18 @@
 									"value": "smooth",
 									"type": "Text"
 								}
+							],
+							[
+								"cardlink",
+								{
+									"__TYPE__": "LinkContent",
+									"key": "1dde03c0-e22b-4773-80b1-2a37cd286196",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "http://twitter.com",
+										"text": "pet"
+									}
+								}
 							]
 						]
 					}

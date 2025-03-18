@@ -18,6 +18,28 @@ interface BlogDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   heading: prismic.KeyTextField;
+
+  /**
+   * Image field in *Blog*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blog.image
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * Paragraph field in *Blog*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blog.paragraph
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  paragraph: prismic.KeyTextField;
 }
 
 /**
@@ -41,11 +63,44 @@ type BlogTestDocumentDataSlicesSlice =
   | HeroSlice;
 
 /**
- * Content for blog_test documents
+ * Content for blogs documents
  */
 interface BlogTestDocumentData {
   /**
-   * Slice Zone field in *blog_test*
+   * BlogImage field in *blogs*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blog_test.blogimage
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  blogimage: prismic.ImageField<never>;
+
+  /**
+   * BlogHeading field in *blogs*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blog_test.blogheading
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  blogheading: prismic.KeyTextField;
+
+  /**
+   * BlogParagraph field in *blogs*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blog_test.blogparagraph
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  blogparagraph: prismic.KeyTextField;
+
+  /**
+   * Slice Zone field in *blogs*
    *
    * - **Field Type**: Slice Zone
    * - **Placeholder**: *None*
@@ -54,7 +109,7 @@ interface BlogTestDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#slices
    */
   slices: prismic.SliceZone<BlogTestDocumentDataSlicesSlice> /**
-   * Meta Title field in *blog_test*
+   * Meta Title field in *blogs*
    *
    * - **Field Type**: Text
    * - **Placeholder**: A title of the page used for social media and search engines
@@ -65,7 +120,7 @@ interface BlogTestDocumentData {
   meta_title: prismic.KeyTextField;
 
   /**
-   * Meta Description field in *blog_test*
+   * Meta Description field in *blogs*
    *
    * - **Field Type**: Text
    * - **Placeholder**: A brief summary of the page
@@ -76,7 +131,7 @@ interface BlogTestDocumentData {
   meta_description: prismic.KeyTextField;
 
   /**
-   * Meta Image field in *blog_test*
+   * Meta Image field in *blogs*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
@@ -85,7 +140,7 @@ interface BlogTestDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   meta_image: prismic.ImageField<never> /**
-   * Image field in *blog_test*
+   * Image field in *blogs*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
@@ -96,7 +151,7 @@ interface BlogTestDocumentData {
   image: prismic.ImageField<never>;
 
   /**
-   * Prize field in *blog_test*
+   * Prize field in *blogs*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
@@ -107,7 +162,7 @@ interface BlogTestDocumentData {
   prize: prismic.KeyTextField;
 
   /**
-   * Heading field in *blog_test*
+   * Heading field in *blogs*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
@@ -118,7 +173,7 @@ interface BlogTestDocumentData {
   heading: prismic.KeyTextField;
 
   /**
-   * Paragraph field in *blog_test*
+   * Paragraph field in *blogs*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
@@ -130,7 +185,7 @@ interface BlogTestDocumentData {
 }
 
 /**
- * blog_test document from Prismic
+ * blogs document from Prismic
  *
  * - **API ID**: `blog_test`
  * - **Repeatable**: `true`
@@ -1060,6 +1115,22 @@ export interface PropertySliceDefaultPrimaryCardsItem {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   cardheartimg: prismic.ImageField<never>;
+
+  /**
+   * CardLink field in *Property → Default → Primary → Cards*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: property.default.primary.cards[].cardlink
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  cardlink: prismic.LinkField<
+    string,
+    string,
+    unknown,
+    prismic.FieldState,
+    never
+  >;
 }
 
 /**

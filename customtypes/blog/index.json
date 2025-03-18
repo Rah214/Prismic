@@ -18,6 +18,21 @@
           "label": "Heading",
           "placeholder": ""
         }
+      },
+      "image": {
+        "type": "Image",
+        "config": {
+          "label": "Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "paragraph": {
+        "type": "Text",
+        "config": {
+          "label": "Paragraph",
+          "placeholder": ""
+        }
       }
     }
   }

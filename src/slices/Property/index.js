@@ -1,5 +1,5 @@
 'use client'
-import { PrismicNextImage } from "@prismicio/next";
+import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode } from "swiper/modules";
@@ -57,7 +57,7 @@ const PropertyCard = ({ item, primary }) => {
   console.log('item', item)
   return (
     <div className="w-full bg-white rounded-2xl overflow-hidden hover:scale-105 hover:shadow-2xl transition-transform duration-300">
-      <Link href={item?.cardlink || "/"}>
+      <PrismicNextLink field={item?.cardlink || "/"}>
         <div className="w-full bg-white rounded-2xl hover:shadow-xl cursor-pointer overflow-hidden">
           <PrismicNextImage field={item?.cardimage} className="w-full" />
           <div className="p-6 relative">
@@ -94,7 +94,7 @@ const PropertyCard = ({ item, primary }) => {
             </div>
           </div>
         </div>
-      </Link>
+      </PrismicNextLink>
     </div>
   );
 };
