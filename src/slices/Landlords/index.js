@@ -85,9 +85,15 @@ const Landlords = ({ slice }) => {
 
         {/* Button */}
         <div className='text-center md:text-left w-full'>
-          <button className="bg-[#7065F0] w-full md:w-auto text-white text-[14px] lg:text-[16px] font-bold px-6 py-3 lg:px-[38px] lg:py-[12px] rounded-md hover:bg-purple-600 transition">
-            {activeTab === "tenants" ? primary?.btnlabel : "See more"}
-          </button>
+          {activeTab === "tenants" ? (
+            <button className="bg-[#7065F0] w-full md:w-auto text-white text-[14px] lg:text-[16px] font-bold px-6 py-3 lg:px-[38px] lg:py-[12px] rounded-md hover:bg-purple-600 transition">
+              {primary?.btnlabel}
+            </button>
+          ) : (
+            <button className="bg-[#7065F0] w-full md:w-auto text-white text-[14px] lg:text-[16px] font-bold px-6 py-3 lg:px-[38px] lg:py-[12px] rounded-md hover:bg-purple-600 transition">
+             See more
+            </button>
+          )}
         </div>
       </div>
     </section>

@@ -21,7 +21,7 @@ const Page = () => {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gradient-to-r from-purple-500 to-white font-sans">
+    <div className="flex items-center mx-6 justify-center h-screen bg-gradient-to-r from-purple-500 to-white font-sans">
       <div className="bg-white p-8 rounded-3xl shadow-2xl w-full max-w-sm">
         <h2 className="text-3xl font-semibold text-center text-gray-800 mb-6">
           Create an Account
@@ -30,7 +30,10 @@ const Page = () => {
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Name Field */}
           <div>
-            <label className="block text-lg font-medium text-gray-700 mb-2" htmlFor="name">
+            <label
+              className="block text-lg font-medium text-gray-700 mb-2"
+              htmlFor="name"
+            >
               Full Name
             </label>
             <input
@@ -46,7 +49,10 @@ const Page = () => {
 
           {/* Email Field */}
           <div>
-            <label className="block text-lg font-medium text-gray-700 mb-2" htmlFor="email">
+            <label
+              className="block text-lg font-medium text-gray-700 mb-2"
+              htmlFor="email"
+            >
               Email Address
             </label>
             <input
@@ -62,7 +68,10 @@ const Page = () => {
 
           {/* Password Field */}
           <div>
-            <label className="block text-lg font-medium text-gray-700 mb-2" htmlFor="password">
+            <label
+              className="block text-lg font-medium text-gray-700 mb-2"
+              htmlFor="password"
+            >
               Password
             </label>
             <input
@@ -88,7 +97,10 @@ const Page = () => {
         <div className="text-center mt-4">
           <p className="text-sm text-gray-600">
             Already have an account?{" "}
-            <Link href="/login" className="text-blue-500 font-semibold hover:underline">
+            <Link
+              href="/login"
+              className="text-blue-500 font-semibold hover:underline"
+            >
               Log in
             </Link>
           </p>

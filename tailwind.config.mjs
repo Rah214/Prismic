@@ -8,20 +8,11 @@ export default {
   theme: {
     extend: {
       screens: {
-        'sm': '550px',
-        // => @media (min-width: 640px) { ... }
-  
-        'md': '841px',
-        // => @media (min-width: 768px) { ... }
-  
-        'lg': '1100px',
-        // => @media (min-width: 1024px) { ... }
-  
-        'xl': '1280px',
-        // => @media (min-width: 1280px) { ... }
-  
+        sm: '550px',
+        md: '841px',
+        lg: '1100px',
+        xl: '1280px',
         '2xl': '1348px',
-        // => @media (min-width: 1536px) { ... }
       },
       colors: {
         purple: {
@@ -33,9 +24,9 @@ export default {
         },
       },
       fontFamily: {
-      sans:'Plus Jakarta Sans'
+        sans: 'Plus Jakarta Sans'
       },
-      
+
     },
   },
   plugins: [],
