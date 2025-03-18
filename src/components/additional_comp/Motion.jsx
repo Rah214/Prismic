@@ -10,7 +10,7 @@ const Motion = () => {
 
   return (
     <>
-      <div className="flex justify-between m-au md:m-0 w-full max-w-[297px] rounded-t-[8px] bg-white py-[15px] px-[25px] sm:w-auto">
+      <div className="flex  justify-between m-auto md:m-0 w-full max-w-[297px] rounded-t-[8px] bg-white py-[15px] px-[25px] sm:w-auto">
         {tabs?.map((tab) => (
           <div
             key={tab.name}
