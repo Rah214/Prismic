@@ -34,17 +34,17 @@ export default async function Page({ params }) {
 
   return (
     <>
-      <div className=" my-4 flex flex-col items-center justify-center max-w-[1000px] mx-auto bg-gradient-to-b from-green-800 to-black text-white p-6 rounded-lg shadow-lg">
+      <div className="my-4 flex flex-col items-center justify-center max-w-[1000px] mx-auto bg-gradient-to-b from-green-800 to-black text-white p-6 rounded-lg shadow-lg">
         <div className="flex flex-col items-center justify-center gap-6">
           <img
             src={blogData?.image}
             alt={blogData?.heading}
             className="w-full h-auto rounded-lg shadow-md"
           />
-          <h1 className="text-3xl font-extrabold text-white mt-4 text-center">
+          <h1 className="text-3xl font-extrabold text-white mt-4 text-center md:text-4xl">
             {blogData?.heading ?? ""}
           </h1>
-          <p className="text-lg text-gray-300 text-center">{blogData?.paragraph ?? ""}</p>
+          <p className="text-lg text-gray-300 text-center md:text-xl">{blogData?.paragraph ?? ""}</p>
         </div>
 
         <SliceZone slices={page.data?.slices} components={components} />
