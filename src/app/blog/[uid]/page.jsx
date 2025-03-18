@@ -34,7 +34,7 @@ export default async function Page({ params }) {
 
   return (
     <>
-      <div className="my-4 flex flex-col mx-6  items-center justify-center max-w-[1000px] mx-auto bg-gradient-to-b from-green-800 to-black text-white p-6 rounded-lg shadow-lg">
+      <div className="my-4 flex flex-col items-center justify-center max-w-[1000px] mx-auto bg-gradient-to-b from-green-800 to-black text-white p-6 rounded-lg shadow-lg">
         <div className="flex flex-col items-center justify-center gap-6">
           <img
             src={blogData?.image}
