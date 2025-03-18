@@ -6,7 +6,6 @@
  * @type {import("react").FC<LandlordsProps>}
 */
 import { useState } from "react";
-// import Image from "next/image";
 import { PrismicNextImage } from "@prismicio/next";
 
 const Landlords = ({ slice }) => {
@@ -15,7 +14,6 @@ const Landlords = ({ slice }) => {
 
   return (
     <section className='max-w-[1440px] md:gap-[132px] w-full font-sans flex flex-col md:flex-row items-center justify-center md:justify-between bg-white mx-auto py-[70px] xl:py-[100px] px-[30px] xl:px-[160px]'>
-
       {/* Image Container */}
       <div className="relative flex justify-center mb-7 md:mb-0 items-center w-full max-w-[544px]">
         <PrismicNextImage field={slice?.primary?.landlordimage} />
@@ -37,25 +35,24 @@ const Landlords = ({ slice }) => {
 
       {/* Content Container */}
       <div className='w-full max-w-[444px] lg:min-h-[400px] md:min-h-[200px] mt-[80px] md:mt-0 flex flex-col lg:gap-8 gap-6 items-center md:items-start'>
-
         {/* Tab Buttons */}
         <div className="flex items-center justify-center w-full max-w-[327px]">
           <div className="flex items-center justify-center border-[2px] bg-[#EFEFFB] border-[#DEDEF7] px-2 py-2 shadow-md">
             <button
               onClick={() => setActiveTab("tenants")}
               className={`px-6 py-2 text-[16px] font-bold leading-6 focus:outline-none transition ${activeTab === "tenants"
-                  ? "bg-white text-[#7065F0] shadow"
-                  : "bg-transparent text-[#6C727F]"
-                }`}
+                ? "bg-white text-[#7065F0] shadow"
+                : "bg-transparent text-[#6C727F]"} `}
+              style={{ minWidth: '120px' }} // Ensures consistent button width
             >
               For tenants
             </button>
             <button
               onClick={() => setActiveTab("landlords")}
               className={`px-6 py-2 text-[16px] font-bold focus:outline-none transition ${activeTab === "landlords"
-                  ? "bg-white text-[#7065F0] shadow"
-                  : "bg-transparent text-[#6C727F]"
-                }`}
+                ? "bg-white text-[#7065F0] shadow"
+                : "bg-transparent text-[#6C727F]"} `}
+              style={{ minWidth: '120px' }} // Ensures consistent button width
             >
               For landlords
             </button>
@@ -71,30 +68,26 @@ const Landlords = ({ slice }) => {
 
         {/* Description */}
         <div className='w-full'>
-          {activeTab === "tenants" ? (
-            <p className='text-[#6C727F] text-center md:text-left lg:leading-[25.6px] font-normal'>
-              {primary?.btnpara}
-            </p>
-          ) : (
-            <p className='text-[#6C727F] text-center md:text-left lg:leading-[25.6px] font-normal'>
-              <span className='text-black font-bold'>Welcome to Landlords</span>
-              <br />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vero suscipit consequatur.
-            </p>
-          )}
+          <div className={`transition-all duration-300`} style={{ minHeight: '100px' }}>
+            {activeTab === "tenants" ? (
+              <p className='text-[#6C727F] text-center md:text-left lg:leading-[25.6px] font-normal'>
+                {primary?.btnpara}
+              </p>
+            ) : (
+              <p className='text-[#6C727F] text-center md:text-left lg:leading-[25.6px] font-normal'>
+                <span className='text-black font-bold'>Welcome to Landlords</span>
+                <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vero suscipit consequatur.
+              </p>
+            )}
+          </div>
         </div>
 
         {/* Button */}
         <div className='text-center md:text-left w-full'>
-          {activeTab === "tenants" ? (
-            <button className="bg-[#7065F0] w-full md:w-auto text-white text-[14px] lg:text-[16px] font-bold px-6 py-3 lg:px-[38px] lg:py-[12px] rounded-md hover:bg-purple-600 transition">
-              {primary?.btnlabel}
-            </button>
-          ) : (
-            <button className="bg-[#7065F0] w-full md:w-auto text-white text-[14px] lg:text-[16px] font-bold px-6 py-3 lg:px-[38px] lg:py-[12px] rounded-md hover:bg-purple-600 transition">
-              Learn more
-            </button>
-          )}
+          <button className="bg-[#7065F0] w-full md:w-auto text-white text-[14px] lg:text-[16px] font-bold px-6 py-3 lg:px-[38px] lg:py-[12px] rounded-md hover:bg-purple-600 transition">
+            {activeTab === "tenants" ? primary?.btnlabel : "See more"}
+          </button>
         </div>
       </div>
     </section>

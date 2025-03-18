@@ -1,12 +1,11 @@
 "use client";
 
 import { PrismicNextImage } from "@prismicio/next";
-// import { Navigation } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/navigation';
-import { FreeMode, Navigation } from "swiper/modules";
+// import 'swiper/css'; // Core Swiper CSS
+import 'swiper/css/pagination'; // Pagination CSS
+import { Pagination } from "swiper/modules"; // Pagination module
+import '../../app/globals.css'; // Import global styles
 
 /**
  * @typedef {import("@prismicio/client").Content.TestimonialsSlice} TestimonialsSlice
@@ -15,7 +14,10 @@ import { FreeMode, Navigation } from "swiper/modules";
  */
 const Testimonials = ({ slice }) => {
   const { primary } = slice;
-  // console.log(primary);
+
+  // Debugging: Log the slice data to ensure it's being passed correctly
+  console.log("Slice Data:", slice);
+
   return (
     <section
       className="w-full md:pt-[64px] pt-[32px] md:pb-[100px] pb-[50px] font-sans px-[24px]"
@@ -31,12 +33,15 @@ const Testimonials = ({ slice }) => {
           </p>
         </div>
 
+        {/* Swiper Container */}
         <Swiper
           spaceBetween={50}
           slidesPerView={1}
-          freeMode={true}
-          navigation={true}
-          modules={[FreeMode, Navigation]}
+          pagination={{
+            clickable: true,
+            type: 'bullets', // Use bullet-style pagination
+          }}
+          modules={[Pagination]} // Only include the Pagination module
           className="w-full max-w-[736px]"
         >
           {primary?.testimonialsdata?.map((item, index) => (
@@ -53,6 +58,9 @@ const Testimonials = ({ slice }) => {
             </SwiperSlide>
           ))}
         </Swiper>
+
+        {/* Pagination Dots Container */}
+        {/* <div className="swiper-pagination"></div> */}
       </div>
 
       <div className="flex justify-center items-center pt-[56px]">

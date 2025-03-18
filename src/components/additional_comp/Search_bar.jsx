@@ -15,7 +15,7 @@ export default function SearchBar() {
             </label>
             <select
               id="location"
-              className="w-full cursor-pointer py-2 text-[#000929] leading-[26.1px] text-[18px] font-bold"
+              className="w-full cursor-pointer py-2 text-[#000929] leading-[26.1px] text-[18px] font-bold focus:outline-none"
               value={location}
               onChange={(e) => setLocation(e.target.value)}
             >
@@ -39,13 +39,13 @@ export default function SearchBar() {
               <input
                 type="date"
                 id="move-in-date"
-                className="w-full py-2  cursor-pointer text-[#000929] leading-[26.1px] text-[18px] font-bold"
+                className="w-full py-2 focus:outline-none cursor-pointer text-[#000929] leading-[26.1px] text-[18px] font-bold"
                 value={moveInDate}
                 onChange={(e) => setMoveInDate(e.target.value)}
               />
             </div>
 
-            <button className="bg-[#7065F0] text-white lg:text-[16px] text-[12px] lg:leading-[24px] leading-[12px] font-bold lg:px-8 lg:py-2 px-6 py-3 rounded-[8px]  hover:bg-purple-600 transition ">
+            <button className="bg-[#7065F0] text-white lg:text-[16px] text-[12px] lg:leading-[24px]  leading-[12px] font-bold lg:px-8 lg:py-2 px-6 py-3 rounded-[8px]  hover:bg-purple-600 transition ">
               Browse Properties
             </button>
           </div>

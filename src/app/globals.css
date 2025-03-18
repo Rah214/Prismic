@@ -4,77 +4,68 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom Pagination Styles */
+/* Custom styles for Swiper pagination dots */
+/* Customize the dots */
 
-/* .swiper-pagination {
-    position: absolute;
-    bottom: 10px; 
-    left: 50%; 
-    top:300px;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    
-    gap: 4px; 
+
+/* .swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  transition-timing-function: var(
+    --swiper-wrapper-transition-timing-function,
+    initial
+  );
+  box-sizing: content-box;
 }
-
-.swiper-pagination-bullet {
-    width: 12px; 
-    height: 12px; 
-    background-color: #ccc; 
-    opacity: 1; 
-    border-radius: 50%; 
-    transition: background-color 0.3s ease; 
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #7065F0; 
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: opacity 0.3s;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+  top: 20px;
 } */
-
-.swiper-button-next,
-.swiper-button-prev {
-  width: 12px;
-  height: 12px;
+.swiper-pagination {
+  position: relative !important; 
+  margin-top: 20px !important;
 }
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 16px;
-}
+/* Optionally, you can also add margin to each bullet individually */
 
 /* Header Classes */
-.header{
-  @apply max-w-[1440px] mx-auto py-6 px-4 font-sans border-b-[1.5px] border-[#F0EFFB]
+.header {
+  @apply max-w-[1440px] mx-auto py-6 px-4 font-sans border-b-[1.5px] border-[#F0EFFB];
 }
-
-
 
 /* Landlord CTA */
 
-.topText{
-  @apply text-[#7065F0] md:leading-[36px] md:text-[24px] font-bold
+.topText {
+  @apply text-[#7065F0] md:leading-[36px] md:text-[24px] font-bold;
 }
 
-.heading{
-  @apply md:text-[40px] text-[32px] md:leading-[56px] leading-[40px] font-bold mt-2
+.heading {
+  @apply md:text-[40px] text-[32px] md:leading-[56px] leading-[40px] font-bold mt-2;
 }
 
-.description{
-  @apply mt-4 text-[#D3D5DA] leading-[25.6px]
+.description {
+  @apply mt-4 text-[#D3D5DA] leading-[25.6px];
 }
 
-.input{
-  @apply w-full md:py-[22px] py-[15px] pr-[90px] pl-[16px] rounded-[8px] text-gray-900 outline-none
+.input {
+  @apply w-full md:py-[22px] py-[15px] pr-[90px] pl-[16px] rounded-[8px] text-gray-900 outline-none;
 }
 
-.button{
-  @apply bg-[#7065F0] font-bold leading-[24px] hidden sm:block rounded-[8px] text-white absolute right-2 top-1/2 transform -translate-y-1/2 py-[12px] px-[40px] hover:bg-purple-600
+.button {
+  @apply bg-[#7065F0] font-bold leading-[24px] hidden sm:block rounded-[8px] text-white absolute right-2 top-1/2 transform -translate-y-1/2 py-[12px] px-[40px] hover:bg-purple-600;
 }
 
-.button2{
-  @apply bg-[#7065F0] mt-3 font-bold leading-[24px] w-full max-w-md sm:hidden block rounded-[8px] text-white py-[12px] px-[40px] hover:bg-purple-600
+.button2 {
+  @apply bg-[#7065F0] mt-3 font-bold leading-[24px] w-full max-w-md sm:hidden block rounded-[8px] text-white py-[12px] px-[40px] hover:bg-purple-600;
 }
 
-.bottomText{
-  @apply mt-4 text-[#D3D5DA] leading-[19.6px] text-[14px]
+.bottomText {
+  @apply mt-4 text-[#D3D5DA] leading-[19.6px] text-[14px];
 }
-
