@@ -31,6 +31,7 @@ export default async function Page({ params }) {
     additionalHeading5: page.data?.blog6heading ?? "",
     additionalParagraph5: page.data?.blog6paragraph ?? "",
   };
+  console.log(blogData);
 
   return (
     <>
@@ -44,7 +45,9 @@ export default async function Page({ params }) {
           <h1 className="text-3xl font-extrabold text-white mt-4 text-center md:text-4xl">
             {blogData?.heading ?? ""}
           </h1>
-          <p className="text-lg text-gray-300 text-center md:text-xl">{blogData?.paragraph ?? ""}</p>
+          <p className="text-lg text-gray-300 text-center md:text-xl">
+            {blogData?.paragraph ?? ""}
+          </p>
         </div>
 
         <SliceZone slices={page.data?.slices} components={components} />

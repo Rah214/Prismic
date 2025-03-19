@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 export default function Counter() {
-  const Counter = ({ end, label }) => {
+  const CounterItem = ({ end, label }) => {
     const [count, setCount] = useState(0);
 
     useEffect(() => {
@@ -32,26 +32,19 @@ export default function Counter() {
     };
 
     return (
-      <div className="max-w-[300px]">
-        <p className="text-4xl font-bold text-purple-500">
+      <div className="max-w-[300px] hover:scale-105 transition-transform duration-300 ease-in-out w-[120px] text-left"> {/* Changed text alignment to left */}
+        <p className="text-4xl font-bold text-purple-500 font-sans">
           {formatNumber(count)}
         </p>
-        <p className="text-sm text-gray-500">{label}</p>
+        <p className="text-sm text-gray-500">{label}</p> {/* Moved label below count */}
       </div>
     );
   };
 
   return (
-    
     <div className="flex justify-center md:justify-normal gap-[40px]">
-      <div className=" flex gap-6  ">
-        {/* border-gray-300 border-l-[2px] */}
-        <Counter end={50000} label="renters" />
-      </div>
-      <div className="">
-        {/* border-l-[2px] border-gray-300 */}
-        <Counter end={10000} label="properties" />
-      </div>
+      <CounterItem end={50000} label="renters" />
+      <CounterItem end={10000} label="properties" />
     </div>
   );
 }
